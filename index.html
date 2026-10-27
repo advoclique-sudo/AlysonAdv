@@ -43,7 +43,7 @@ header{position:sticky;top:0;z-index:50;background:rgba(14,27,42,.97);border-bot
 .nav .btn{padding:10px 20px;font-size:.92rem}
 
 /* hero */
-.hero{background:radial-gradient(1000px 520px at 85% -10%,#24476b 0%,transparent 60%),linear-gradient(160deg,var(--ink) 0%,var(--navy) 100%);color:#fff;padding:72px 0 88px}
+.hero{background:linear-gradient(180deg,rgba(14,27,42,.82) 0%,rgba(22,48,74,.64) 100%),url('https://images.unsplash.com/photo-1759542877976-5d870f7cd0a9?w=1800&q=80&auto=format&fit=crop') center 35%/cover no-repeat,var(--navy);color:#fff;padding:110px 0 120px}
 .hero-grid>div{max-width:800px;margin:0 auto;text-align:center}.hero-lead{margin-left:auto;margin-right:auto}
 .hero .tag{color:var(--brass)}
 .hero h1{color:#fff;font-size:clamp(2.1rem,5vw,3.4rem);margin:14px 0 20px}
@@ -89,7 +89,7 @@ header{position:sticky;top:0;z-index:50;background:rgba(14,27,42,.97);border-bot
 /* equipe */
 .team{background:var(--white)}
 .team-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
-.photos{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.photos{display:grid;grid-template-columns:1fr 1fr;gap:16px}.photos .ph:nth-child(2){margin-top:40px}
 .ph{border-radius:var(--radius);overflow:hidden;position:relative;aspect-ratio:3/4;background:var(--paper)}
 .ph img{width:100%;height:100%;object-fit:cover;object-position:center 18%}
 .ph figcaption{position:absolute;left:10px;right:10px;bottom:10px;background:rgba(14,27,42,.9);color:#fff;border-radius:10px;padding:9px 12px;font-size:.84rem;line-height:1.3}
@@ -131,7 +131,7 @@ footer li svg{width:18px;height:18px;color:var(--brass);flex-shrink:0}
 .float-wa svg{width:30px;height:30px;color:#fff}
 
 @media(max-width:960px){
-  .hero-grid,.team-grid,.faq-grid{grid-template-columns:1fr;gap:40px}
+  .team-grid,.faq-grid{grid-template-columns:1fr;gap:40px}
   .ctps{margin:0 auto}
   .cards,.r-list{grid-template-columns:1fr 1fr}
   .f-grid{grid-template-columns:1fr 1fr}
@@ -140,7 +140,7 @@ footer li svg{width:18px;height:18px;color:var(--brass);flex-shrink:0}
   body{font-size:16px}
   section{padding:60px 0}
   .wrap{padding:0 16px}
-  .hero{padding:48px 0 68px}
+  .hero{padding:72px 0 84px;background-position:center,58% 30%,0 0}
   .nav .btn span{display:none}
   .nav .btn{padding:10px 13px}
   .brand-name{font-size:1rem}
