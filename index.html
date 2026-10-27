@@ -44,11 +44,11 @@ header{position:sticky;top:0;z-index:50;background:rgba(14,27,42,.97);border-bot
 
 /* hero */
 .hero{background:radial-gradient(1000px 520px at 85% -10%,#24476b 0%,transparent 60%),linear-gradient(160deg,var(--ink) 0%,var(--navy) 100%);color:#fff;padding:72px 0 88px}
-.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:center}
+.hero-grid>div{max-width:800px;margin:0 auto;text-align:center}.hero-lead{margin-left:auto;margin-right:auto}
 .hero .tag{color:var(--brass)}
 .hero h1{color:#fff;font-size:clamp(2.1rem,5vw,3.4rem);margin:14px 0 20px}
 .hero h1 span{color:var(--brass)}
-.hero-lead{font-size:1.12rem;color:rgba(255,255,255,.82);max-width:540px;margin-bottom:30px}
+.hero-lead{font-size:1.12rem;color:rgba(255,255,255,.82);max-width:640px;margin-bottom:30px}
 .hero-info{margin-top:22px;font-size:.9rem;color:rgba(255,255,255,.65)}
 
 /* carteira */
@@ -61,7 +61,7 @@ header{position:sticky;top:0;z-index:50;background:rgba(14,27,42,.97);border-bot
 .ctps-sheet h4{font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-bottom:10px}
 .row{display:flex;align-items:flex-end;gap:12px;padding:9px 0;border-bottom:1px dashed #cdbfa5;font-size:.85rem;color:var(--muted)}
 .row i{flex:1;border-bottom:1.5px solid #c9bba0;height:14px}
-.stamp{position:absolute;right:-6px;bottom:40px;transform:rotate(-14deg);border:3px solid var(--stamp);color:var(--stamp);font-weight:800;font-size:.86rem;letter-spacing:.12em;text-transform:uppercase;padding:8px 16px;border-radius:6px;background:rgba(247,243,234,.94)}
+.stamp{position:absolute;right:-6px;bottom:-4px;transform:rotate(-14deg);border:3px solid var(--stamp);color:var(--stamp);font-weight:800;font-size:.86rem;letter-spacing:.12em;text-transform:uppercase;padding:8px 16px;border-radius:6px;background:rgba(247,243,234,.94)}
 
 /* situações */
 .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
@@ -175,19 +175,6 @@ footer li svg{width:18px;height:18px;color:var(--brass);flex-shrink:0}
         <svg viewBox="0 0 24 24" fill="currentColor"><use href="#i-wa"/></svg>Falar com um advogado
       </a>
       <p class="hero-info">Atendimento pelo WhatsApp · Mato Grosso e online</p>
-    </div>
-    <div class="ctps" aria-hidden="true">
-      <div class="ctps-card">
-        <div class="ctps-top"><small>República Federativa do Brasil</small><b>Carteira de Trabalho<br>e Previdência Social</b></div>
-        <div class="ctps-sheet">
-          <h4>Contrato de Trabalho</h4>
-          <div class="row">Empregador<i></i></div>
-          <div class="row">Cargo<i></i></div>
-          <div class="row">Admissão<i></i></div>
-          <div class="row" style="border:0">Remuneração<i></i></div>
-        </div>
-      </div>
-      <div class="stamp">Sem registro</div>
     </div>
   </div>
 </section>
